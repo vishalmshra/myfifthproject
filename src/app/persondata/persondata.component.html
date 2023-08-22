@@ -1,0 +1,62 @@
+<div class="maindiv">
+  <div class="formdiv" style="padding-top: 8px;">
+     
+      <form [formGroup]="persondataForm" (ngSubmit)="submitReactiveForm()">
+           <h2 style="text-align: center; color: black; padding-top:2px;">Register</h2>
+      <p style="text-align: center; color: black;">Fill out this form</p>
+      <div class="row mb-3" style="display: flex;">
+        <label for="Name" class="col-lg-4 col-md-4 col-sm-4 col-form-label">First Name</label>
+        <div class="col-lg-6 col-md-8 col-sm-8 regform">
+          <input type="Name" formControlName="FirstName" class="form-control" id="inputName">
+        </div>
+      </div>
+    
+      <div class="row mb-3" style="display: flex;">
+        <label for="Name" class="col-lg-4 col-md-4 col-sm-4 col-form-label">Last Name</label>
+        <div class="col-lg-6 col-md-8 col-sm-8 regform">
+          <input type="Name" formControlName="LastName" class="form-control" id="inpultName">
+        </div>
+      </div>
+
+      <div class="row mb-3" style="display: flex;">
+        <label for="email" class="col-lg-4 col-md-4 col-sm-4 col-form-label">Email Id</label>
+        <div class="col-lg-6 col-md-8 col-sm-8 regform">
+          <input type="email" formControlName="email" class="form-control" id="inputmail">
+        </div>
+      </div>
+   
+   
+
+      <!-- <div class="row mb-3" style="display: flex;">
+        <label class="col-lg-4 col-md-4 col-sm-4 col-form-label">Gender</label> <br>
+        <div class="col-lg-6 col-md-8 col-sm-8 regform" style="display: flex;">
+          <div class="col-lg-4 col-md-4 col-sm-4" style=" margin-left: 2px;padding: 1px;margin: 1px;">
+            <input type="radio" formControlName="gender" id="gender" name="gender" value="male" /> Male <br>
+          </div>
+          <div class="col-lg-6 col-md-4 col-sm-4" style=" margin-left: 4px;padding: 1px;margin: 1px;">
+            <input type="radio" id="genders" name="gender" value="female" /> Female <br />
+          </div>
+        </div>
+      </div> -->
+
+      
+      <div class="row mb-3" style="display: flex;">
+        <label for="inputPassword" class="col-lg-4 col-md-4 col-sm-4 col-form-label">Password</label>
+        <div class="col-lg-6 col-md-8 col-sm-8 regform">
+          <input type="password" formControlName="password" class="form-control" id="inputPassword">
+        </div>
+      </div>
+  
+      <div class="col-auto" style="flex: 0 0 auto;
+         width: auto;
+         display: flex;
+         justify-content: center;
+         width: 100%; margin-top: 2px;">
+        <button type="submit" class="btn btn-primary submit">Submit</button>
+        <button type="login" class="btn btn-primary login">Login</button>
+      </div>
+         
+        </form>
+        
+    </div>
+</div>
